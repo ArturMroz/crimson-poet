@@ -34,7 +34,7 @@ class Poet
   end
 end
 
-files        = Dir['./*.txt']
+files        = Dir['./training_set/*.txt']
 training_set = files.map { |f| File.open(f).read }.join(' ')
 poet         = Poet.new(training_set)
 
